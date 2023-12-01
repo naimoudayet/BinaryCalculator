@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".binarycalculator.ui.activities.BinaryCalculatorActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <fragment
+        android:id="@+id/standard_display_fragment"
+        android:name="io.droidtech.app.binarycalculator.ui.frags.StandardDisplayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_standard_display" />
+
+    <fragment
+        android:id="@+id/standard_input_fragment"
+        android:name="io.droidtech.app.binarycalculator.ui.frags.StandardInputFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/standard_display_fragment"
+        tools:layout="@layout/fragment_standard_input" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

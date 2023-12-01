@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:elevation="14dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".binarycalculator.ui.frags.StandardDisplayFragment">
+
+    <HorizontalScrollView
+        android:id="@+id/scv_expression"
+        style="@style/ScrollViewDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <TextView
+            android:id="@+id/lbl_expression"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            tools:text="985+600" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/scv_display"
+        style="@style/ScrollViewDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/scv_expression"
+        android:layout_toEndOf="@id/imb_delete">
+
+        <TextView
+            android:id="@+id/lbl_display"
+            style="@style/TextViewDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            tools:text="985+600" />
+
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:id="@+id/imb_delete"
+        style="@style/ImageButtonDisplay"
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imb_copy"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_action_clear" />
+
+    <ImageButton
+        android:id="@+id/imb_copy"
+        style="@style/ImageButtonDisplay"
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/scv_expression"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_action_content_copy" />
+
+</RelativeLayout>

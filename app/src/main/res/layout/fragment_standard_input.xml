@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".binarycalculator.ui.frags.StandardInputFragment">
+
+    <GridLayout
+        android:id="@+id/mainGrid1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:columnOrderPreserved="false"
+        android:orientation="horizontal"
+        android:rowCount="1">
+
+        <Button
+            android:id="@+id/btn_operation_add"
+            style="@style/ButtonOperation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_addition" />
+
+        <Button
+            android:id="@+id/btn_operation_subtract"
+            style="@style/ButtonOperation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_substraction" />
+
+        <Button
+            android:id="@+id/btn_operation_divide"
+            style="@style/ButtonOperation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_division" />
+
+        <Button
+            android:id="@+id/btn_operation_multiply"
+            style="@style/ButtonOperation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_multiplication" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/mainGrid2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:orientation="vertical"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/btn_number_seven"
+            style="@style/ButtonNumberPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_seven" />
+
+        <Button
+            android:id="@+id/btn_number_four"
+            style="@style/ButtonNumberPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_four" />
+
+        <Button
+            android:id="@+id/btn_number_one"
+            style="@style/ButtonNumberPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_one" />
+
+
+        <Button
+            android:id="@+id/btn_number_eight"
+            style="@style/ButtonNumberPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_eight" />
+
+        <Button
+            android:id="@+id/btn_number_five"
+            style="@style/ButtonNumberPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_five" />
+
+        <Button
+            android:id="@+id/btn_number_two"
+            style="@style/ButtonNumberPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_two" />
+
+
+        <Button
+            android:id="@+id/btn_number_nine"
+            style="@style/ButtonNumberPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_nine" />
+
+        <Button
+            android:id="@+id/btn_number_six"
+            style="@style/ButtonNumberPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_six" />
+
+        <Button
+            android:id="@+id/btn_number_three"
+            style="@style/ButtonNumberPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_three" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/mainGrid3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:orientation="horizontal"
+        android:rowCount="1">
+
+        <Button
+            android:id="@+id/btn_number_zero"
+            style="@style/ButtonNumberPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_zero" />
+
+        <Button
+            android:id="@+id/btn_evaluation"
+            style="@style/ButtonNumberPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/btn_equals" />
+
+    </GridLayout>
+
+</LinearLayout>

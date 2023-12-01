@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/txt_binary_decimal">
+        <menu>
+            <item
+                android:id="@+id/nav_binary_calculator"
+                android:icon="@drawable/ic_action_arrow_right"
+                android:title="@string/txt_binary_calculator" />
+            <item
+                android:id="@+id/nav_binary_to_decimal"
+                android:icon="@drawable/ic_action_arrow_right"
+                android:title="@string/txt_binary_to_decimal" />
+            <item
+                android:id="@+id/nav_decimal_to_binary"
+                android:icon="@drawable/ic_action_arrow_right"
+                android:title="@string/txt_decimal_to_binary" />
+        </menu>
+    </item>
+
+    <item android:title="@string/txt_others">
+        <menu>
+            <item
+                android:id="@+id/nav_rate_app"
+                android:icon="@drawable/sharp_grade_24"
+                android:title="@string/txt_rate_app" />
+            <item
+                android:id="@+id/nav_more_apps"
+                android:icon="@drawable/sharp_phone_android_24"
+                android:title="@string/txt_more_apps" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/sharp_exit_to_app_24"
+                android:title="@string/txt_exit" />
+        </menu>
+    </item>
+
+</menu>
